@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script async src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav__list">
+                <li class="nav__left">
+                    <div class="nav__item"><img src="images/Logo.svg" alt="Logo"></div>
+                    <div class="nav__item"><img src="images/Search.svg" alt="Search"></div>
+                </li>
+                <li class="nav__right">
+                    <div class="nav__item"><img src="images/Menu.svg" alt="nav"></div>
+                    <div class="nav__item"><img src="images/Personal.svg" alt="Personal"></div>
+                    <div class="nav__item cart_button"><img src="images/cart.svg" alt="Basket">
+                        <div class="cart__products_count">
+                            <div class="productsCount">0</div>
+                        </div>
+                        <div class="basket hidden">
+                            <div class="basketRow basketHeader">
+                                <div>Название товара</div>
+                                <div>Количество</div>
+                                <div>Цена за шт.</div>
+                                <div>Итого</div>
+                            </div>
+                            <div class="basketTotal">
+                                Товаров в корзине на сумму:
+                                $<span class="basketTotalValue">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="breadcrump__block">
+            <div class="container breadcrump__block">
+                <div class="breadcrump__heading">New arrivals</div>
+                <div class="breadcrumb">
+                    <a class="breadcrumb-item" href="#">home</a>
+                    <a class="breadcrumb-item" href="#">men</a>
+                    <div class="breadcrumb-item breadcrumb-item_active">New arrivals</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="filter">
+            <div class="filter_left">
+                <span class="filter_left_text">FILTER</span>
+                <img class="filter_icon" src="images/filter.svg" alt="filter">
+            </div>
+            <div class="filter_right">
+                <div class="filter_right_text">TRENDING NOW</div>
+                <img src="images/vector_filter.svg" alt="filter">
+                <div class="filter_right_text">SIZE</div>
+                <img src="images/vector_filter.svg" alt="filter">
+                <div class="filter_right_text">PRICE</div>
+                <img src="images/vector_filter.svg" alt="filter">
+            </div>
+        </div>
+    </div>
+    <main class="container main_catalog">
+        <div class="main__list">
+            <div class="main__card" data-id="1" data-name="Product 0" data-price="35.90">
+                <img src="images/main_bags.png" alt="main_bags">
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+                <div class="main__card_header">Product 0</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main__card" data-id="2" data-name="Product 1" data-price="33.00">
+                <img src="images/main_sneakers.png" alt="main_bags">
+                <div class="main__card_header">Product 1</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main__card main__card_none" data-id="3" data-name="Product 2" data-price="30.20">
+                <img src="images/main_hats.png" alt="main_bags">
+                <div class="main__card_header">Product 2</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main__card" data-id="4" data-name="Product 3" data-price="25.90">
+                <img src="images/main_boots.png" alt="main_bags">
+                <div class="main__card_header">Product 3</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main__card" data-id="5" data-name="Product 4" data-price="60.70">
+                <img src="images/main_longsleeve.png" alt="main_bags">
+                <div class="main__card_header">Product 4</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main__card" data-id="6" data-name="Product 5" data-price="59.20">
+                <img src="images/main_caps.png" alt="main_bags">
+                <div class="main__card_header">Product 5</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main__card" data-id="7" data-name="Product 6" data-price="92.20">
+                <img src="images/main_t-shirts.png" alt="main_bags">
+                <div class="main__card_header">Product 6</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main__card" data-id="8" data-name="Product 7" data-price="12.20">
+                <img src="images/main_cowboy.png" alt="main_bags">
+                <div class="main__card_header">Product 7</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+            <div class="main__card" data-id="9" data-name="Product 8" data-price="68.20">
+                <img src="images/main_pants.png" alt="main_bags">
+                <div class="main__card_header">Product 8</div>
+                <div class="main__card_description">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="item_description main__card_price">$52.00</div>
+                <div class="featuredImgDark">
+                    <button class="card-button">
+                        <img src="images/cart.svg" alt="cart">
+                        <div class="button-text">Add to Cart</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="pagination">
+        <img src="images/pagination_left.svg" alt="pagination_left">
+        <a class="page" href="#">1</a>
+        <a class="page" href="#">2</a>
+        <a class="page" href="#">3</a>
+        <a class="page" href="#">4</a>
+        <a class="page" href="#">5</a>
+        <a class="page" href="#">6.....20</a>
+        <img src="images/pagination_right.svg" alt="pagination_right">
+    </div>
+    <div class="advantages_back">
+        <div class="container advantages">
+            <div class="advantages__block">
+                <img src="images/advantages__delivery.svg" alt="advantages__delivery">
+                <div class="advantages_heading">Free Delivery</div>
+                <div class="advantages_explanation">Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.</div>
+            </div>
+            <div class="advantages__block">
+                <img src="images/advantages__sales.svg" alt="advantages__sales">
+                <div class="advantages_heading">Sales & discounts</div>
+                <div class="advantages_explanation">Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.</div>
+            </div>
+            <div class="advantages__block">
+                <img src="images/advantages__quality.svg" alt="advantages__quality">
+                <div class="advantages_heading">Quality assurance</div>
+                <div class="advantages_explanation">Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.</div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribes_back">
+        <div class="subscribes">
+            <div class="subscribes__reveiw">
+                <img src="images/subscribe_reviewer.png" alt="subscribes__reveiwer">
+                <div class="subscribes_quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                    condimentum“</div>
+            </div>
+            <div class="subscribe_us">
+                <div class="subscribes_heading">SUBSCRIBE</div>
+                <div class="subscribes_explanation">FOR OUR NEWLETTER AND PROMOTION</div>
+                <div class="subscribe_block">
+                    <form action="" id="form_subscribe">
+                        <input type="email" class="subscribe__form_email" placeholder="Enter Your Email"></input>
+                    </form>
+                    <button class="subscribe__form_button" type="submit" form="form_subscribe"
+                        value="Submit">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__copy">&copy; 2021 Brand All Rights Reserved.</div>
+        <div class="footer__links">
+            <div class="footer__icons">
+                <img src="images/icons_facebook.svg" alt="icons_facebook">
+            </div>
+            <div class="footer__icons" style="background-color: #F16D7F">
+                <img src="images/icons_instagram.svg" alt="icons_instagram">
+            </div>
+            <div class="footer__icons">
+                <img src="images/icons_pinterest.svg" alt="icons_pinterest">
+            </div>
+            <div class="footer__icons">
+                <img src="images/icons_twitter.svg" alt="icons_twitter">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<div class="basketRow" data-product="${productId}">
+    <div>${basket[productId].name}</div>
+    <div>
+        <span class="productCount">${basket[productId].count}</span>
+    </div>
+    <div>$${basket[productId].price}</div>
+    <div>
+        $<span class="productTotalRow">
+            ${(basket[productId].price * [productId]).count}
+        </span>
+    </div>
+</div>
